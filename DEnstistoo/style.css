@@ -1,0 +1,455 @@
+body{
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    height: auto;
+    /* position: fixed; */
+    /* position: fixed; */
+  }
+  .logo{
+      position: relative;
+      margin-top:10px;
+      /* left: 1%; */
+      right: 3%;
+      /* size: 80dp; */
+  
+    }
+    .logo img{
+      width: 60px;
+      height: auto;
+      border-radius: 100px;
+      margin-right: 20px;
+      margin-top: 8px;
+    }
+    .nav-links{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .nav-links a{
+      position: relative;
+      font-size: 14px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    .nav-links li{
+      list-style: none;
+    }
+    .book-appointment{
+      position: relative;
+      background-color: #0097E8;
+      border-radius: 8px;
+      /* width: 150px; */
+      height: 20px;
+      /* padding: 15px; */
+    }
+    .book-appointment a{
+     
+      font-size: 12px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin:auto;
+      padding: 15px;
+     
+  
+    }
+   
+    .contact-info p{
+      color: white;
+      /* margin-left: 50px; */
+      font-weight: bold;
+      font-size: 14px;
+      margin: 3px;
+    }
+    .section1{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 650px;
+      background-image: url(Images/section1.jpg);
+      background-size: cover;   
+      /* padding: 0%;  */
+    }
+    .welcome-text{
+      display: flex;
+      flex-direction: column;
+      width: max-content;
+      margin-top: 250px;
+      margin-left: 20px;
+    }
+   .welcome-text h1{
+      /* align-items: center; */
+      font-size: 35px;
+      color: #006494;
+      margin: 8px;
+      width: fit-content;
+   }
+   .welcome-text h3{
+      color: #006494;
+      margin: 5px;
+      width: fit-content;
+   }
+   .welcome-text h5{
+      color: #006494;
+      margin: 5px;
+      width: fit-content;
+   }
+   .section1_appointmentbtn{
+      background-color: #0097E8;
+      border-radius: 8px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 50px;
+      padding-right: 50px;
+      width: fit-content;
+      margin-top: 10PX;
+      margin-left: 20px;
+  
+   }
+   .section1_appointmentbtn a{
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: #0097E8;
+   }
+   .popup{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: max-content;
+    height: auto;
+    /* background-color: #006494; */
+    padding: 20px;
+    transform: translate(-25%,-60%) scale(0.1);
+    border-radius: 10px;
+    left: 50% ;
+    top:25%;
+    backdrop-filter:blur(14px);
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+   }
+   .active-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1)  ;
+   }
+   .popup h2{
+    font-family:sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0%;
+    width: max-content;
+    height: auto;
+    padding: 5px;
+    color: #006494;
+   }
+   .popup input{
+    margin: 5px;
+    /* padding: 10px; */
+    width: 90%;
+    height:30px ;
+    border-radius: 10px;
+    
+   }
+   .popup p{
+    margin: 0%;
+    padding: 5px;
+    color: #006494;
+   }
+   .popup button{
+    width: 200px;
+    height: 35px;
+    margin: auto;
+    border-radius: 10px;
+    background-color:#0097E8;
+  
+   }
+   .section2{
+      background-image: url(Images/teeth_muscle.jpg);
+      background-size: cover;
+      width: 100%;
+      height: 600px;
+      background-color: white;
+      /* margin-top: auto; */
+       }
+  .opacity_effect{
+    width: 100%;
+    height: 100%;
+    background-color: #252525;
+    background-size: cover;
+    opacity: 80%;
+    padding: 30px;
+    /* margin: 0%; */
+  }
+  .section2_div1{
+    width: auto;
+    height: auto;
+    
+  }
+  .section2_div1 h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+  }
+  .section2_div2{
+    display: flex;
+    justify-content: space-evenly;
+  
+  
+  }
+  .section2_div2_1{
+    display: flex;
+    flex-direction: column;
+    /* margin: 10px; */
+  }
+  .section2_div2_1 img{
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+  }
+  .section2_div2_1 div{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+  }
+  .section2_div2_1 div h3{
+    margin:auto;
+  }
+  .section2_div2_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .section2_div2_2 div{
+    
+    width: 700px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    /* margin: 10px; */
+    justify-content: space-evenly;
+  }
+  
+   
+   .section3{
+     width: 100%;
+      height: 800px;
+      /* background-color: #023e7d; */
+      background-image: url(Images/dentist-with-smile\ \(2\).jpg);
+      background-size: cover;
+      justify-content: space-evenly;
+      /* padding-top: 10px; */
+   }
+   .opacity_effect1{
+    width: 100%;
+    height: 100%;
+    background-color: #023E7D;
+    opacity: 80%;
+   }
+   .section3_div1{
+     margin-left: 43%;
+     color: white;
+     /* margin-bottom: 40px; */
+     padding: 5px;
+  
+   }
+   .section3_div2{
+    display: flex;
+    justify-content: space-evenly;
+   }
+   .section3_div2 div{
+    text-align: center;
+   }
+   .section3_div2 h2{
+    color: white;
+   }
+   .section3_div2 img{
+     width: 200px;
+     height: auto;
+     border-radius: 10px;
+   }
+   .section3_div3{
+     display: flex;
+     color: white;
+     align-items: center;
+     justify-content: space-evenly;
+     margin-top: 20px;
+   }
+   
+   .section3_div4 iframe{
+     width: 550px;
+     height: 410px;
+     border-width: 0px;
+     
+   }
+   .section3_div5{
+     width: 600px;
+     height: 420px;
+     background-color:#252525 ;
+     border-radius: 10px;
+     padding: 5px;
+   }
+   .section3_div5 h3{
+    margin-top: 15px;
+    margin-bottom: 0%;
+     margin-left: 8px;
+     color: white;
+   }
+   .section3_div5 h2{
+    margin-top: 15px;
+    margin-bottom: 0%;
+     margin-left: 8px;
+     color: white  ;
+   }
+   .section3_div5 p{
+    margin-top: 10px;
+    margin-bottom: 0%;
+     margin-left: 8px;
+     color: white;
+   }
+   .section4{
+    
+     width: 100%;
+     height: 600px;
+     background-image: url(Images/teeth.jpg);
+     background-size: cover;
+     
+   }
+   .opacity_effect2{
+    display: flex;
+    background-size: cover;
+    opacity: 80%;
+    justify-content: space-evenly;
+    
+   }
+   .section4_div1{
+    color: #006494;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    
+   }
+   .section4_div2{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: #F8F8F8 ;
+    border-radius: 10px;
+    color: #006494;
+    margin: 20px;
+   }
+   .section4_div2 h4{
+    margin: 10px;
+   }
+   .section4_div2 input{
+    margin: 10px;
+    height: 25px;
+    border-radius: 5px;
+    border-width: 0cap;
+   }
+   .section4_div2 p{
+    margin-left: 10px;
+    margin-top: 5px;
+   }
+   .section4_div2 button{
+    background-color: #0097E8;
+    height: 30px;
+    margin: auto;
+    width: fit-content;
+    border-radius: 5px;
+    border-bottom: #F8F8F8;
+   }
+   * {
+    box-sizing: border-box;
+  }
+  
+  .section5_div1 {
+    width: 80%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: flex;
+    
+    
+  }
+  .section5{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background-color: #003554;
+    /* background-size: cover; */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section5_div1 div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-gap: 30px;
+    padding: 20px;
+    flex: none;
+    margin: 40px;
+  }
+  .section5_div1::-webkit-scrollbar{
+    display: none;
+  }
+  .section5_div1 div img{
+    width: 400px;
+    border-radius: 10px;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+  }
+  .section5_div2{
+    margin: auto;
+    cursor: pointer;
+  }
+  .section5_div3{
+    margin: auto;
+    cursor: pointer;
+  }
+  .section5_div1 div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  .section6{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+  }
+  .section6_div1{
+    position: absolute;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 30px;
+  }
+  .section6_div1_1 img{
+    width: 120px;
+    height: 70px;
+    border-radius: 40px;
+  }
+  .section6_div1_2{
+    display: flex;
+    margin-left: 500px;
+    /* justify-content: space-between; */
+  }
+  .section6_div1_2 img{
+    width: 80px;
+    height: 80px;
+    /* justify-content: space-evenly; */
+    margin-left: 50px;
+  }

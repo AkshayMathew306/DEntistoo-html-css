@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav style="background-color:#003554; width: 100%; ">
+      <div class="container" style="display: flex;justify-content: space-evenly;align-items: center;">
+        <div style="display: flex;">
+          <a href="#" class="logo"><img src="Images/logo_new.jpg" alt="Hospital Name"></a>
+          <h4 style="color: white;">Smile with <br> Lovely Dentals</h1>
+        </div>
+        <div class="nav-links">
+          <li style="margin: 8px;"><a href="#">Home</a></li>
+            <li style="margin: 8px;"><a href="#">About Us</a></li>
+            <li style="margin: 8px;"><a href="#">Services</a></li>
+            <li style="margin: 8px;"><a href="#">Testimonials</a></li>
+            <li style="margin: 8px;"><a href="#">Blog</a></li>
+            <li style="margin: 8px;"><a href="#">Contact Us</a></li>
+        </div>
+        <div class="contact-info"  style="display: flex; flex-direction: column;">
+          <p>Phone: 123-456-7890</p>
+          <p>Email: seth@dentalhospital.com</p>
+        </div>
+        <div class="book-appointment" id="appontment_btn1">
+          <a href="#" class="btn-primary" onclick="openPopup()" >Book Appointment</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="popup" id="popup_appointment">
+      <h2>Name</h2>
+      <input type="text" name="Enter Your Name" id="">
+      <h2>Email</h2>
+      <input type="email" name="Enter Your email" id="">
+      <h2>Contact Number</h2>
+      <input type="text" name="Enter Your Contact Number" id="">
+      <h2>Preffered Time</h2>
+      <input type="text" name="">
+      <p>We are open 10 am-1 pm and 5pm-7pm</p>
+      <h2>Your Dental Condition</h2>
+      <input type="text" name="" id="">
+      <button  onclick="closePopup()">Request Appointment</button>
+    </div>
+    <div class="section1">
+      <div class="welcome-text">
+        <h1>DR.Vandana Seth, BDS</h1>
+        <h3>Personalized and High-Tech Indian Dentist</h3>
+        <h5>Your oral health is our top priority. We are committed to providing a safe and comfortable <br> environment for all our patients, where they can receive the highest quality dental care.</h5>  
+      </div>
+      <div class="section1_appointmentbtn" >
+        <a href="#" onclick="openPopup()">Book Appointment</a>
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <div class="section2">
+      <div class="opacity_effect">
+        <div class="section2_div1">
+          <h1>About Us</h1>
+        </div>
+        <div class="section2_div2">
+          <div class="section2_div2_1">
+            <img src="Images/dentist_image.jpg" alt="">
+            <div>
+              <h3>DR.Ajay Seth, DDS </h3>
+            </div>
+          </div>
+          <div class="section2_div2_2">
+            <div>
+              <p>Welcome to the Lovely dental clinic of Dr. Lovely Singh, BDS! Dr. Singh is a skilled dentist who completed her dental degree from Kalka Dental College in Meerut, Uttar Pradesh. She is committed to providing exceptional dental care and staying up-to-date with the latest advancements in dentistry.</p>
+            </div>
+            <div>
+              <h4> Our Timings:</h4>
+              <ul>
+                <li>Monday to Friday 9am – 7pm</li>
+                <li>Saturday 9am – 3pm</li>
+                <li>Sunday Closed</li>
+              </ul>
+              <h2>Maintain good oral hygiene</h2>
+            <p>We recommend brushing twice a day <br> to prevent bad breath, cavities and <br> other dental problems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="section3">
+      <div class="opacity_effect1">
+        <div class="section3_div1">
+          <h2>What We Offer!!</h2>
+        </div>
+        <div class="section3_div2">
+          <div>
+            <img src="Images/dentalImplant.jpg" alt="">
+            <h2 id="section3_div3_text1">Dental Implant</h2>
+          </div>
+          <div>
+            <img src="Images/generaldenistry.jpg" alt="">
+            <h2 id="section3_div3_text2">General Denistry</h2>
+          </div>
+          <div>
+            <img src="Images/teeth_scaling.jpg" alt="">
+            <h2 id="section3_div3_text3">Teeth Scaling</h2>
+          </div>
+          <div>
+            <img src="Images/capping.jpg" alt="">
+            <h2 id="section3_div3_text4">Capping</h2>
+          </div>
+          <div>
+            <img src="Images/theeth_scan.jpg" alt="">
+            <h2 id="section3_div3_text5">X-ray Teeth</h2>
+          </div>
+        </div>
+        <div class="section3_div3">
+          <div class="section3_div4">
+            <iframe src="https://embed.lottiefiles.com/animation/82890"></iframe>
+          </div>
+          <div class="section3_div5">
+            <h3>Our Dental Care Services in Khar includes:</h3>
+            <h2>TEETH WHITENING</h2>
+            <p>Don’t feel awkward about stained, dull teeth. We have <br> super-class teeth whitening treatment that makes your <br> dream of a stunning white smile a reality.</p>
+            <h2>SINGLE SITTING ROOT CANAL</h2>
+            <p>Root Canal Therapy that is not only painless, but only requires a single <br> sitting! This is possible due to the world-class technology and the skill and <br> experience of the team of dentists at Dr Krinita Motwani’s Dental Clinic.</p>
+            <h2>PREVENTIVE DENTISTRY</h2>
+            <p>A 6 monthly visit to the dentist is very important for maintaining <br> your dental hygiene and to detect any cavities or gum issues at an early stage <br> without much damage having been done.</p>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="section4">
+      <div class="opacity_effect2">
+        <div class="section4_div1">
+          <h2>WHAT ARE YOU WAITING FOR...</h2>
+          <h1>MAKE AN APPOINTMENT</h1>
+          <p>At Lovely Dentals we offer a single visit root canal  treatment within <br>
+             60 minutes.
+            We use the latest technology with the best materials.
+          </p>
+          <h2>CLINIC</h2>
+          <p><strong>S/O DR.Ajay Seth , Sadar ROAD , Jabalpur , Madhya Pradesh</strong></p>
+          <h2>OPENING HOURS</h2>
+          <ul>
+            <li><strong>Monday to Friday 9am – 7pm</strong></li>
+            <li><strong>Saturday 9am – 3pm</strong></li>
+            <li><strong>Sunday Closed</strong></li>
+          </ul>
+          <h2>CONTACT</h2>
+          <p><strong>Phone : +91-9586849509</strong></p>
+          <p><strong>Email :mathew.saji@gmail.com</strong></p>
+  
+        </div>
+        <div class="section4_div2">
+          <h4>Name*</h4>
+          <input type="text">
+          <h4>Email*</h4>
+          <input type="text">
+          <h4>Contact Number*</h4>
+          <input type="text">
+          <h4>Preferred Time*</h4>
+          <input type="text">
+          <p>We are open 10 am-1 pm and 5pm-7pm</p>
+          <h4>Your Dental Condition*</h4>
+          <input type="text">
+          <button><strong>Request Appointment</strong></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    
+    <div class="section5">
+      
+      <div class="section5_div2">
+        <img src="icons/BACK BUTTON.png" id="backimagebutton">
+      </div>
+      <div class="section5_div1">
+        <div>
+          <span><img src="Images/generaldenistry.jpg" ></span>
+          <span><img src="Images/generaldenistry.jpg" ></span>
+          <span><img src="Images/generaldenistry.jpg" ></span>
+        </div>
+        <div>
+          <span><img src="Images/generaldenistry.jpg" ></span>
+          <span><img src="Images/generaldenistry.jpg" ></span>
+          <span><img src="Images/generaldenistry.jpg" ></span>
+        </div>
+        <div>
+          <span><img src="Images/generaldenistry.jpg" ></span>
+          <span><img src="Images/generaldenistry.jpg" ></span>
+          <span><img src="Images/generaldenistry.jpg" ></span>
+        </div>
+      </div>
+      <div class="section5_div3">
+        <img src="icons/NEXT BUTTON.png" id="nextimagebutton">
+      </div>
+     
+    </div>
+  </section>
+  <section>
+    <div class="section6">
+      <div class="section6_div1">
+        <div class="section6_div1_1">
+          <img  src="Images/logo_new.jpg" alt="">
+        </div>
+        <div class="section6_div1_2">
+          <img src="icons/icons8-instagram-48.png" alt="">
+          <img src="icons/icons8-twitter-48.png" alt="">
+          <img src="icons/icons8-facebook-48.png" alt="">
+        </div>
+      </div>
+      <div class="section6_div2">
+        <span><p>Home</p></span>
+        <span><p>Gallery</p></span>
+        <span><p>Previous Cases</p></span>
+        <span><p>Contact Us</p></span>
+        <span><p>Location</p></span>
+        <span><p>Premium Guests</p></span>
+        <span><p>About Doctor</p></span>
+      </div>
+    </div>
+  </section>
+      
+</body>
+
+
+
+
+<script>
+  let scrollContainer =document.querySelector(".section5_div1");
+  let backbtn = document.getElementById("backimagebutton");
+  let nextbtn = document.getElementById("nextimagebutton");
+  let popup = document.getElementById("popup_appointment");
+  let appointment_btn1=document.getElementById("appontment_btn1").addEventListener('click',openPopup());
+
+  scrollContainer.addEventListener("wheel",(evt) => {
+    scrollContainer.style.scrollbehavior = "smooth";
+    evt.preventDefault();
+    scrollContainer.scrollLeft += evt.deltaY;
+  });
+
+  nextbtn.addEventListener("click",() =>{
+    scrollContainer.style.scrollbehavior = "smooth";
+    scrollContainer.scrollLeft +=300;
+  });
+  backbtn.addEventListener("click",() =>{
+    scrollContainer.style.scrollbehavior = "smooth";
+    scrollContainer.scrollLeft -=300;
+  });
+
+  function openPopup(){
+    popup.classList.add("active-popup");
+  }
+  function closePopup(){
+    popup.classList.remove("active-popup");
+  }
+</script>
+</html>
